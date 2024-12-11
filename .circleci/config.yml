@@ -11,6 +11,8 @@ executors:
   docker-publisher:
     environment:
       IMAGE_NAME: jayaprakash1/node-hello-world
+      DOCKERHUB_USERNAME: jayaprakash1
+      DOCKERHUB_PASS: Jaya@1234
     docker:
       - image: circleci/buildpack-deps:stretch
 jobs:
